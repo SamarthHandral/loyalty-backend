@@ -14,7 +14,7 @@ app = FastAPI(title="Loyalty Card API")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000", "http://localhost:5173"],  # Add your production domains here
+    allow_origins=["*"],  # Add your production domains here
     allow_credentials=True,
     allow_methods=["GET", "POST", "PUT"],
     allow_headers=["*"],
